@@ -49,6 +49,7 @@ body {
   min-height: 200px;
   position: relative;
   width: 100%;
+  border: 1px solid white;
 }
 .recept2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -76,7 +77,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90px;
+  position: relative;
   width: 100%;
+  border: 1px solid white;
 }
 
 .meta {
@@ -89,15 +92,16 @@ body {
   color: white;
 }
 
-h1.hlavniNazev {
+.hlavniNazev {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 28px;
   color: white;
-  padding-left: 10px;
-  margin: 0;
   position: absolute;
   bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  margin: 0;
 }
 
 .nazev {
@@ -105,8 +109,74 @@ h1.hlavniNazev {
   font-weight: 800;
   font-size: 18px;
   color: white;
-  padding-left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
   margin: 0;
-  position: relative;
-  bottom: -20px;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1199px) {
+  .hlavniRecept {
+    min-height: 250px;
+  }
+  .hlavniNazev {
+    font-size: 36px;
+  }
+
+  .vedlejsiRecepty {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recept2,
+  .recept3,
+  .recept4,
+  .recept5 {
+    min-height: 150px;
+    max-width: 50%;
+  }
+
+  .nazev {
+    font-size: 22px;
+  }
+
+  .meta {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recepty {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hlavniRecept {
+    min-height: 400px;
+    width: 33%;
+  }
+  .hlavniNazev {
+    font-size: 48px;
+  }
+
+  .vedlejsiRecepty {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+  }
+  .recept2,
+  .recept3,
+  .recept4,
+  .recept5 {
+    min-height: 200px;
+    width: 50%;
+  }
+
+  .nazev {
+    font-size: 28px;
+  }
+
+  .meta {
+    padding: 20px;
+  }
 }
