@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,24 +22,91 @@ notebook/pc:
 }
 */
 
-
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+.hlavniRecept {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/salat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  width: 100%;
+}
+.recept2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/chlebicek.jpg);
+}
+.recept3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/tacos.jpg);
+}
+
+.recept4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/cizrna.jpg);
+}
+
+.recept5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/burger.jpg);
+}
+
+.recept2,
+.recept3,
+.recept4,
+.recept5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90px;
+  width: 100%;
+}
+
+.meta {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+h1.hlavniNazev {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: white;
+  padding-left: 10px;
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+}
+
+.nazev {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  padding-left: 10px;
+  margin: 0;
+  position: relative;
+  bottom: -20px;
+}
